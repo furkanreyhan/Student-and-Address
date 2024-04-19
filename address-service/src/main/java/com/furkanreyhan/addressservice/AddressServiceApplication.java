@@ -7,9 +7,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan({"com.furkanreyhan.addressservice.controller", "com.furkanreyhan.addressservice.service"})
-@EntityScan("com.furkanreyhan.addressservice.entity")
-@EnableJpaRepositories("com.furkanreyhan.addressservice.repository")
 public class AddressServiceApplication {
 
     public static void main(String[] args) {

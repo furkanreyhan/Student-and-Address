@@ -17,7 +17,7 @@ import java.util.Optional;
 
 @Service
 public class AddressService {
-
+    @Autowired
     AddressRepository addressRepository;
     public AddressResponse createAddress(CreateAddressRequest createAddressRequest) {
         Address address = new Address();
@@ -34,5 +34,7 @@ public class AddressService {
         Optional<Address> address = addressRepository.findById(id);
 
         return new AddressResponse(address.get());
+
+
     }
 }
