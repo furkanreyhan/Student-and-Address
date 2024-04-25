@@ -18,9 +18,14 @@ public class StudentController {
 		return studentService.createStudent(createStudentRequest);
 	}
 	
-	@GetMapping("getById/{id}")
+	@GetMapping("/getById/{id}")
 	public StudentResponse getById (@PathVariable long id) {
 		return studentService.getById(id);
+	}
+
+	@GetMapping("/falan")
+	public String falan(){
+		return "FALAN FILAN";
 	}
 	
 }
